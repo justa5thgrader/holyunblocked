@@ -1,0 +1,268 @@
+.searchbarstyle {
+background-color:white;
+color:black;
+	
+}
+p {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+iframe + p {
+  padding: 10px;
+
+}
+embed + p {
+  padding: 10px;
+
+}
+p + sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.special-sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: block !important;
+  position: static !important;
+  margin: 10px;
+}
+
+sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: block;
+  position: static;
+  margin: 10px;
+}
+
+body {
+  background-color: #161515;
+  width: 100%;
+  color: #5D3FD3;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+hr {
+	background-color: #5D3FD3;
+	color: #5D3FD3;
+}
+iframe {  
+  margin: 0 auto;
+  display: block;
+		background-color:#702963;
+	background-image: url("../../pages/games/games/images/loading.gif");
+}
+embed {  
+  margin: 0 auto;
+  display: block;
+		background-color:#702963;
+	background-image: url("../../pages/games/games/images/loading.gif");
+}
+h1 {
+  font-size: 50px;
+}
+
+/* hyperlink styling */
+a:link {
+  color: #5D3FD3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: #5D3FD3;
+}
+
+a:hover {
+  color: #5D3FD3;
+  text-decoration: none;
+}
+
+a:active {
+  color: #5D3FD3;
+}
+/* hyperlink styling */
+a:link {
+  color: #5D3FD3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:visited {
+  color: #5D3FD3;
+}
+
+a:hover {
+  color: #5D3FD3;
+  text-decoration: none;
+}
+
+a:active {
+  color: #5D3FD3;
+}
+
+/* navbar*/
+nav {
+  margin-top: 4.3vmin;
+  font-size: 23px;
+  text-align: center;
+  width: auto;
+}
+
+button {
+	color:#5D3FD3;
+	background-color:#161515;
+}
+
+#gameList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+margin-right: auto;
+width: 12em
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+margin-left: auto;
+margin-right: auto;
+width: 8em
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.search-item {
+  width: 14.3vw;
+  height: 14.9vw;
+	color:white;
+  float: left;
+  margin: 30px;
+  font-size: 1vw;
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+border-radius: 15px 50px 30px 5px;
+}
+.search-item:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+/* IDS */
+
+/* search */
+#searchbar {
+  width: 20%;
+  background-color: #0000;
+  border: #5D3FD3 inset 2px;
+  color: white;
+}
+#search-items {
+  width: 80%;
+	height:200em;
+margin-left: auto;
+margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CLASSES */
+/* navbar */
+/* navbar */
+.nav-container {
+  background-color: #0f0f0f;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 22vh;
+  box-sizing: border-box;
+}
+.nav-item:link {
+  text-align: center;
+  text-decoration: none;
+  padding: 3.7vmin;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  color: #702963;
+}
+.nav-item:visited {
+  color: #702963;
+}
+.logo {
+  padding-top: 20px;
+  height: 30%;
+  text-align: center;
+}
+
+/* search */
+
+.search-img {
+  height: 13.5vw;
+  width: 14vw;
+  clip-path: border-box;
+  margin: 0 auto;
+border-radius: 15px 50px 30px 5px;
+}
+img + a {
+  display: block;
+/*stuff that makes no sense because why not.*/
